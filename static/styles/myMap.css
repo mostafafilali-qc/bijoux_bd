@@ -1,0 +1,40 @@
+#map{
+  height: calc(100vh - 3.5rem);
+  width: 100%;
+}
+#hr{
+  color: rgb(121, 120, 120);
+}
+#pdiv{
+  bottom: 2%;
+  width: calc(100% - 1.5rem);
+  position:absolute;
+}
+#btnad{
+  margin-left: 1%;
+}
+.margin-style{
+  margin-top: 4%;
+}
+.btnprofil{
+  width: 100%;
+}
+.colheigh {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.sidebar a {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+}
+#regLoginbtn{
+  text-align: center;
+}
+#marginRightSpace{
+  margin-right: 1%;
+}
+.hideAlert{
+  display: none;
+}
