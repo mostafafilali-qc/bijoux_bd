@@ -18,32 +18,57 @@ mycursor = mydb.cursor()
 
 
 @app.route("/")
-def register():
+def Accueil():
 	pass
 
 
 @app.route("/api/Connexion", methods=['POST'])
-def login():
+def Connexion():
 	pass
 
 
 @app.route("/api/Inscription", methods=['POST'])
-def create_account():
+def Inscription():
 	pass
 
 
 @app.route("/api/Deconnexion", methods=['POST'])
-def sign_out():
+def Deconnexion():
 	pass
 
 
-@app.route("/api/Recherche", methods=`'POST')
-def search():
+@app.route("/api/rechercheProduit", methods=['POST'])
+def rechercheProduit():
+	pass
+
+
+@app.route("/api/recherche")
+def Recherche():
 	pass
 
 
 @app.route("/api/ajouterPanier", methods=['POST'])
-def louerAppartment():
+def ajouterPanier():
+	pass
+
+
+@app.route("/api/suprimmerPanier", methods=['POST'])
+def suprimmerPanier():
+	pass
+
+
+@app.route("/api/commanderPanier", methods=['POST'])
+def commanderPanier():
+	pass
+
+
+@app.route("/api/Commande", methods=['POST'])
+def Commande():
+	pass
+
+
+@app.route("/api/Noter", methods=['POST'])
+def Noter():
 	pass
 
 

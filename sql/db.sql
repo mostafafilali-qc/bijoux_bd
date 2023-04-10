@@ -39,13 +39,12 @@ CREATE TABLE Categories (
   PRIMARY KEY (ID_Categorie)
 );
 
-CREATE TABLE Commentaires (
-  ID_Commentaire INT,
+CREATE TABLE Notes (
+  ID_Note INT,
   ID_Client INT,
   ID_Produit INT,
   Note INT,
-  Commentaire TEXT,
-  PRIMARY KEY (ID_Commentaire),
+  PRIMARY KEY (ID_Note),
   FOREIGN KEY (ID_Client) REFERENCES Clients(ID_Client),
   FOREIGN KEY (ID_Produit) REFERENCES Produits(ID_Produit)
 );
