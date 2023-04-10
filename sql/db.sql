@@ -2,6 +2,8 @@ create database bijoux;
 use bijoux;
 show tables;
 
+#salut
+
 CREATE TABLE Clients (
   ID_Client INT,
   Nom VARCHAR(50),
