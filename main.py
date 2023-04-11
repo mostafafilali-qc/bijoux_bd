@@ -69,7 +69,7 @@ def supprimerPanier():
     try:
         produit_id = int(request.form['produit_id'])
         user_id = int(request.form['user_id'])
-        mycursor.execute("DELETE FROM Commandes WHERE ID_Produit = %s AND ID_Client, (produit_id, user_id))
+        mycursor.execute("DELETE FROM Commandes WHERE ID_Produit = %s AND ID_Client", (produit_id, user_id))
         mydb.commit()
         return make_response(jsonify({'message': 'Produit supprimé du panier'}), 200)
     except:
