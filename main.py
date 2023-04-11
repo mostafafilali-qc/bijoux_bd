@@ -39,30 +39,53 @@ def Deconnexion():
 
 @app.route("/api/rechercheProduit", methods=['POST'])
 def rechercheProduit():
-	pass
+	try:
+		reponse = make_response(jsonify({"redirect": "/Recherche", "message": request.form}))
+		return reponse
+	except:
+		return ("", 404)
 
 
-@app.route("/api/recherche")
+@app.route("/Recherche")
 def Recherche():
+	# params = []
+	# mycursor.callproc("selection_produits")
 	pass
-
 
 @app.route("/api/ajouterPanier", methods=['POST'])
 def ajouterPanier():
-	pass
+    try:
+        produit_id = int(request.form['produit_id'])
+        user_id = int(request.form['user_id'])
+        mycursor.execute("INSERT INTO Commandes (ID_Produit, ID_Client) VALUES (%s, %s)", (produit_id, user_id))
+        mydb.commit()
+        return make_response(jsonify({'message': 'Produit ajouté au panier'}), 200)
+    except:
+        return make_response(jsonify({'error': 'Failed to add product to cart'}), 500)
 
 
-@app.route("/api/suprimmerPanier", methods=['POST'])
-def suprimmerPanier():
-	pass
+@app.route("/api/supprimerPanier", methods=['POST'])
+def supprimerPanier():
+    try:
+        produit_id = int(request.form['produit_id'])
+        user_id = int(request.form['user_id'])
+        mycursor.execute("DELETE FROM Commandes WHERE ID_Produit = %s AND ID_Client, (produit_id, user_id))
+        mydb.commit()
+        return make_response(jsonify({'message': 'Produit supprimé du panier'}), 200)
+    except:
+        return make_response(jsonify({'error': 'Failed to remove product from cart'}), 500)
 
 
 @app.route("/api/commanderPanier", methods=['POST'])
 def commanderPanier():
-	pass
+	try:
+		resp = make_response(jsonify({"redirect": "/Commande", "message": request.form}))
+		return resp
+	except:
+		return ("", 404)
 
 
-@app.route("/api/Commande", methods=['POST'])
+@app.route("/Commande")
 def Commande():
 	pass
 
