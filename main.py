@@ -19,28 +19,30 @@ mycursor = mydb.cursor()
 
 @app.route("/")
 def Accueil():
-	pass
+	sql = "SELECT * FROM Produits"
+	mycursor.execute(sql)
+	products = mycursor.fetchall()
+	return render_template('accueil.html', products=products)
 
 
 @app.route("/api/Connexion", methods=['POST'])
-def connexion():
+def Connexion():
 	email = request.form.get('email')
 	password = request.form.get('password')
 
-	mycursor = mydb.cursor()
-	sql = "SELECT * FROM Clients WHERE AdresseEmail = %s"
+	pwd = "SELECT MotDePasse FROM Clients WHERE AdresseEmail = %s"
 	val = (email,)
-	mycursor.execute(sql, val)
+	mycursor.execute(pwd, val)
 	client = mycursor.fetchone()
 
 	if client:
-		hashed_password = client[5].encode('utf-8')
+		hashed_password = client[0].encode('utf-8')
 		if bcrypt.checkpw(password.encode('utf-8'), hashed_password):
-			return jsonify({'success': True, 'message': 'Connexion réussie'})
+			return make_response("", 200)
 		else:
-			return jsonify({'success': False, 'message': 'Adresse email ou mot de passe invalide'})
+			return make_response("Moitié marche", 404)
 	else:
-		return jsonify({'success': False, 'message': 'Adresse email ou mot de passe invalide'})
+		return make_response("Rien ne marche", 404)
 
 
 @app.route("/api/Inscription", methods=['POST'])
@@ -117,4 +119,4 @@ def Noter():
 
 
 if __name__ == "__main__":
-	app.run(port=63342)
+	app.run()

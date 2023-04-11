@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19dc10ae-5627-44b4-9672-babcd2592bc0" name="Changes" comment="feat: ajout du loginModal dans html">
+    <list default="true" id="19dc10ae-5627-44b4-9672-babcd2592bc0" name="Changes" comment="feat: ajout app Connexion avec chiffrement">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/db.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/script/myScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/script/myScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accueil.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2O6p2JjiopKOQ7sAa6mcnvjUhzD" />
   <component name="ProjectLevelVcsManager">
@@ -84,6 +85,35 @@
       <recent name="C:\Users\mfila\OneDrive\Bureau\BD_projects\bijoux_bd\templates" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="bijoux_bd" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -100,7 +130,7 @@
       <workItem from="1681104086759" duration="3902000" />
       <workItem from="1681191091056" duration="8521000" />
       <workItem from="1681239121206" duration="264000" />
-      <workItem from="1681239474846" duration="5354000" />
+      <workItem from="1681239474846" duration="11053000" />
     </task>
     <task id="LOCAL-00001" summary="feat: update sql et api">
       <created>1681114760123</created>
@@ -130,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681241476063</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: ajout app Connexion avec chiffrement">
+      <created>1681245081914</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681245081914</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +233,10 @@
     <MESSAGE value="feat: commencement de 5 définitions dans main.py" />
     <MESSAGE value="fix: correction .py" />
     <MESSAGE value="feat: ajout du loginModal dans html" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: ajout du loginModal dans html" />
+    <MESSAGE value="feat: ajout app Connexion avec chiffrement" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: ajout app Connexion avec chiffrement" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bijoux_bd$main.coverage" NAME="main Coverage Results" MODIFIED="1681250533241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
