@@ -2,7 +2,6 @@ create database bijoux;
 use bijoux;
 show tables;
 
-#salut
 
 CREATE TABLE Clients (
   ID_Client INT,
@@ -29,7 +28,7 @@ CREATE TABLE Produits (
   NomProduit VARCHAR(255),
   Description TEXT,
   Prix DECIMAL(10, 2),
-  StockDisponible INT,
+  StockDisponible BOOL,
   ID_Categorie INT,
   PRIMARY KEY (ID_Produit),
   FOREIGN KEY (ID_Categorie) REFERENCES Categories(ID_Categorie)
