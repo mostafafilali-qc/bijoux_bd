@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19dc10ae-5627-44b4-9672-babcd2592bc0" name="Changes" comment="fix: correction .py">
+    <list default="true" id="19dc10ae-5627-44b4-9672-babcd2592bc0" name="Changes" comment="feat: ajout du loginModal dans html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/script/myScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/script/myScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accueil.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +63,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/mfila/OneDrive/Bureau/application_web_2022/backend_glo_2005",
+    "last_opened_file_path": "C:/Users/mfila/OneDrive/Bureau/BD_projects/bijoux_bd/templates",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,6 +79,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mfila\OneDrive\Bureau\BD_projects\bijoux_bd\templates" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -94,7 +100,7 @@
       <workItem from="1681104086759" duration="3902000" />
       <workItem from="1681191091056" duration="8521000" />
       <workItem from="1681239121206" duration="264000" />
-      <workItem from="1681239474846" duration="1918000" />
+      <workItem from="1681239474846" duration="5354000" />
     </task>
     <task id="LOCAL-00001" summary="feat: update sql et api">
       <created>1681114760123</created>
@@ -117,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681200383435</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: ajout du loginModal dans html">
+      <created>1681241476063</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681241476063</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,17 +195,7 @@
     <MESSAGE value="feat: update sql et api" />
     <MESSAGE value="feat: commencement de 5 définitions dans main.py" />
     <MESSAGE value="fix: correction .py" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: correction .py" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>62</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="feat: ajout du loginModal dans html" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: ajout du loginModal dans html" />
   </component>
 </project>
