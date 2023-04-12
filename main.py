@@ -22,7 +22,7 @@ def Accueil():
 	sql = "SELECT * FROM Produits"
 	mycursor.execute(sql)
 	products = mycursor.fetchall()
-	return render_template('accueil.html', products=products)
+	return render_template('accueil.html', products=Produits)
 
 
 @app.route("/api/Connexion", methods=['POST'])
